@@ -64,6 +64,11 @@ body {
   outline: 0 !important;
 }
 
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
 hr {
   box-sizing: content-box;
   height: 0;
@@ -8126,8 +8131,20 @@ body {
 #titoli {
 	margin-bottom: 2.8rem;
 }
+
+.intro-section {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+ 
+}
+.intro-section p {
+  margin-top: 3rem;
+}
+
+
 .about-section {
   padding-top: 10rem;
+  padding-bottom: 10rem;
  
 }
 .about-section p {
