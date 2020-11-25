@@ -17,7 +17,7 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><button type="button" class="btn btn-primary" id="home">Home</button></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,10 +25,10 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto" role="toolbar">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#intro"><button typ ="button" class="btn btn-info">Introduzione</button></a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><button type="button" class="btn btn-info">Autori</button></a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup"><button type="button" class="btn btn-info">Contact</button></a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact_section"><button type="button" class="btn btn-info">Contact</button></a></li>
                     </ul>
                 </div>
             </div>
@@ -37,14 +37,14 @@
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div id="titoli" class="mx-auto text-center">
-                    <h1 class="text-uppercase">φιλοσοφία</h1>
+                    <h1 class="text-uppercase">φιλοσοφια</h1>
                     <h2 class="text-white mx-auto mt-2 mb-5">Scopri il mondo della filosofia greca</h2>
                     <a class="btn btn-primary js-scroll-trigger" class="btn btn-primary" href="#about">Esplora</a>
                 </div>
             </div>
         </header>
         <!-- Introduzione -->
-        <section class="intro-section text-left" id="intro">
+        <section class="intro-section text-left" id="intro" role="complementary">
             <div class="container">
                 <div class="row">
                     <div class="col mx-auto">
@@ -59,58 +59,51 @@
                             In questa pagina, ci proponiamo di far conoscere in modo accessibile i testi della filosofia greca in originale e in traduzione utilizzando la comunicazione aumentativa e alternativa: ogni concetto è accompagnato da un'immagine che ne illustra il senso in modo comprensibile a chi predilige canali di comunicazione non verbali, anche se naturalmente la speranza è che le tavole grafiche facilitino la comprensione del testo anche agli altri utenti!
                         </p>
                         <p class ="text-black">
-                            Se, dopo aver esplorato il sito, vorrete lasciarci la vostra opinione su cosa funziona e cosa invece andrebbe migliorato, trovate i nostri contatti nell'omonima sezione. <em> Buona lettura! </em>
+                            Se, dopo aver esplorato il sito, vorrete lasciarci la vostra opinione su cosa funziona e cosa invece andrebbe migliorato, trovate i nostri contatti nell'omonima sezione. <strong> Buona lettura! </strong>
                         </p>
                     </div>
                 </div>   
             </div>
         </section>
         <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div id="autori" class="container">
+        <main class="about-section text-center" id="about" role="main"> <!-- forse andrebbe cambiato l'id di questa sezione da 'about' a 'autori' o comunque qualcosa di più corretto, anche se meno specifico -->
+            <div id="autori" class="container" role="grid">
                 <div class="row">
                     <div class="col mx-auto">
                         <h2 class="text-black mb-4">Gli autori più celebri</h2>
                         <p class="text-black">            
-							I filosofi greci passavano la loro giornata a pensare, a studiare il mondo, a cercare il significato delle cose e dell’esistenza.
+							Cliccando su una delle immagini sottostanti o sulla relativa didascalia, avrai la possibilità di accedere ai testi scritti dal filosofo scelto. Che aspetti? Inizia ad esplorare la filosofia della Grecia antica!
                         </p>
                     </div>
 					<div class="card-group">
 					  <a href="#"> <div class="card">
 						<img src="https://i1.wp.com/www.boscarol.com/blog/wp-content/uploads/2009/09/plato.jpg?resize=300%2C372" class="card-img-top" alt="Immagine di Platone">
-						  <a href="#" class="btn btn-info">Platone</a>
+						  <a href="#" class="btn btn-info" role="gridcell">Platone</a>
 					  </div> </a>
 					  <a href="#"> <div class="card">
 						<img src="https://mirellapuccio.files.wordpress.com/2016/07/aristotele.jpg" class="card-img-top" alt="Immagine di Aristotele">
-						  <a href="#" class="btn btn-info">Aristotele</a>
+						  <a href="#" class="btn btn-info" role="gridcell">Aristotele</a>
 					  </div> </a>
 					  <a href="#"> <div class="card">
 						<img src="https://www.parlandosparlando.com/wp-content/uploads/2013/10/Scuola-di-Atene-Socrate-Raffaello.jpg" class="card-img-top" alt="Immagine di Socrate">
-						  <a href="#" class="btn btn-info">Socrate</a>
+						  <a href="#" class="btn btn-info" role="gridcell">Socrate</a>
 					  </div> </a>
 					  <a href="#"> <div class="card">
 						<img src="https://staticfanpage.akamaized.net/wp-content/uploads/2015/10/168965811.jpg" class="card-img-top" alt="Immagine di Eraclito">
-						  <a href="#" class="btn btn-info">Eraclito</a>
+						  <a href="#" class="btn btn-info" role="gridcell">Eraclito</a>
 					  </div> </a>
 					</div>
                 </div>
                 
             </div>
-        </section>
-        <!-- eliminata section Projects -->        
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Facci sapere cosa ne pensi!</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </main>
         <!-- Contact-->
-        <section class="contact-section bg-black">
+        <section class="contact-section bg-black" id="contact_section" role="banner">
+            <div id="div_invito">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white aeroplanino"></i>
+                <h2 class="text-white mb-5">Facci sapere cosa ne pensi!</h2>
+                <i class="far fa-paper-plane fa-2x mb-2 text-white aeroplanino"></i>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0">
@@ -129,8 +122,8 @@
                                 <i class="fas fa-envelope text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">Email</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><a href="#!">g.franchini7@studenti.unipi.it</a></div>
-								<div class="small text-black-50"><a href="#!">f.stella4@studenti.unipi.it</a></div>
+                                <div class="small text-black-50"><address><a href="#!">g.franchini7@studenti.unipi.it</a></address></div>
+								<div class="small text-black-50"><address><a href="#!">f.stella4@studenti.unipi.it</a></address></div>
                             </div>
                         </div>
                     </div>

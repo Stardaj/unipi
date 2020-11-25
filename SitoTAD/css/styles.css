@@ -65,7 +65,7 @@ body {
 }
 
 
-em {
+strong {
   font-weight: bold;
   font-style: normal;
 }
@@ -8198,8 +8198,22 @@ body {
 }
 
 .contact-section {
-  padding-top: 0rem;
+  padding-top: 3rem;
 }
+
+#div_invito {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.aeroplanino {
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+}
+
 .contact-section .card {
   border: 0;
   border-bottom: 0.4rem solid #64a19d;
