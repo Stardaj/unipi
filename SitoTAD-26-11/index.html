@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><button type="button" class="btn btn-primary" id="home">Home</button></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto" role="toolbar">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#intro"><button typ ="button" class="btn btn-info">Introduzione</button></a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#autori"><button type="button" class="btn btn-info">Autori</button></a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact_section"><button type="button" class="btn btn-info">Contact</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div id="titoli" class="mx-auto text-center">
+                    <h1 class="text-uppercase">φιλοσοφια</h1>
+                    <h2 class="text-white mx-auto mt-2 mb-5">Scopri il mondo della filosofia greca</h2>
+                    <a class="btn btn-primary js-scroll-trigger" class="btn btn-primary" href="#autori">Esplora</a>
+                </div>
+            </div>
+        </header>
+        <!-- Introduzione -->
+        <section class="intro-section text-left" id="intro" role="complementary"> <!-- Ho reso il testo giustificato con text-justify -->
+            <div class="container">
+                    <div class="col mx-auto">
+                        <h2 class="text-black text-center mb-4">Introduzione</h2>
+                        <p class="text-black text-justify">
+                            La filosofia dell'antica Grecia, che abbraccia un lasso di tempo di più secoli, comprende alcuni fra i nomi più conosciuti della storia dell'umanità e dei personaggi e pensatori più influenti e presenti della cultura occidentale.   
+                        </p>
+                        <p class ="text-black text-justify">
+                            Le parole di questi filosofi hanno contribuito a nutrire le coscienze di milioni di lettori, diffondendo storie, racconti e idee dall'enorme fertilità e potenza icastica e/o intellettuale, come il mito della caverna, la morte di Socrate o il principio di non contraddizione aristotelico.
+                        </p>
+                        <p class ="text-black text-justify">
+                            In questa pagina, ci proponiamo di far conoscere in modo accessibile i testi della filosofia greca in originale e in traduzione utilizzando la comunicazione aumentativa e alternativa: ogni concetto è accompagnato da un'immagine che ne illustra il senso in modo comprensibile a chi predilige canali di comunicazione non verbali, anche se naturalmente la speranza è che le tavole grafiche facilitino la comprensione del testo anche agli altri utenti!
+                        </p>
+                        <p class ="text-black text-justify">
+                            Se, dopo aver esplorato il sito, vorrete lasciarci la vostra opinione su cosa funziona e cosa invece andrebbe migliorato, trovate i nostri contatti nell'omonima sezione. <strong > Buona lettura! </strong>
+                        </p>
+                    </div>
+            </div>
+        </section>
+        <!-- Autori-->
+        <main class="autori-section text-center" id="autori"role="main"> <!--  forse andrebbe cambiato l'id di questa sezione da 'about' a 'autori' o comunque qualcosa di più corretto, anche se meno specifico -->
+            <div class="container" id="filosofi" role="grid"> 
+			<!-- CAMBIATO 
+			-l'id about è diventato autori e la class about-section è diventata autori-section. 
+			-Rimossi alcuni div di troppo.
+			-Aggiunte 4 cards mantenendo un unico card-group (con due row)
+			-Le cards sono solo parzialmente responsive, devo finire il lavoro.-->
+				<h2 class="text-black mb-4">Gli autori più celebri</h2>
+				<p class="text-black">            
+					Cliccando su una delle immagini sottostanti o sulla relativa didascalia, avrai la possibilità di accedere ai testi scritti dal filosofo scelto. Che aspetti? Inizia ad esplorare la filosofia della Grecia antica!
+				</p>
+				<div class="card-group">
+				    <div class="row" id="autori1">
+				       <a href="#"> <div class="card">
+					      <img src="https://i1.wp.com/www.boscarol.com/blog/wp-content/uploads/2009/09/plato.jpg?resize=300%2C372" class="card-img-top" alt="Immagine di Platone">
+					         <a href="#" class="btn btn-info" role="gridcell">Platone</a>
+				       </div> </a>
+				        <a href="#"> <div class="card">
+					    <img src="https://mirellapuccio.files.wordpress.com/2016/07/aristotele.jpg" class="card-img-top" alt="Immagine di Aristotele">
+					    <a href="#" class="btn btn-info" role="gridcell">Aristotele</a>
+				        </div> </a>
+				        <a href="#"> <div class="card">
+					      <img src="https://www.parlandosparlando.com/wp-content/uploads/2013/10/Scuola-di-Atene-Socrate-Raffaello.jpg" class="card-img-top" alt="Immagine di Socrate">
+					         <a href="#" class="btn btn-info" role="gridcell">Socrate</a>
+				        </div> </a>
+				        <a href="#"> <div class="card">
+					      <img src="https://staticfanpage.akamaized.net/wp-content/uploads/2015/10/168965811.jpg" class="card-img-top" alt="Immagine di Eraclito">
+					         <a href="#" class="btn btn-info" role="gridcell">Eraclito</a>
+				        </div> </a>
+				    </div>
+				  <div class="row" id="autori2">
+					    <a href="#"> <div class="card">
+						  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Scuola_di_atene_10.jpg/200px-Scuola_di_atene_10.jpg" class="card-img-top" alt="Immagine di Plotino">
+						    <a href="#" class="btn btn-info" role="gridcell">Plotino</a>
+					    </div> </a>
+					      <a href="#"> <div class="card">
+						    <img src="https://livenetwork.blob.core.windows.net/columns/15075/gallery/69364_8d8419_399x300.jpg" class="card-img-top" alt="Immagine di Parmenide">
+						      <a href="#" class="btn btn-info" role="gridcell">Parmenide</a>
+					    </div> </a>
+					      <a href="#"> <div class="card">
+						    <img src="https://www.sites.google.com/site/philosophicalpower/_/rsrc/1302875079965/home/anassimandro/Anaximander%282%29.jpg" class="card-img-top" alt="Immagine di Anassimandro">
+						      <a href="#" class="btn btn-info" role="gridcell">Anassimandro</a>
+					    </div> </a>
+					    <a href="#"> <div class="card">
+						  <img src="https://i.pinimg.com/originals/ed/fb/cf/edfbcf1972884d477f9365c1e4df6c23.jpg" class="card-img-top" alt="Immagine di Democrito">
+						    <a href="#" class="btn btn-info" role="gridcell">Democrito</a>
+					    </div> </a>
+				  </div>
+				</div>
+            </div>
+        </main>
+        <!-- Contact-->
+        <section class="contact-section bg-black" id="contact_section" role="banner">
+            <div id="div_invito">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white aeroplanino"></i>
+                <h2 class="text-white mb-5">Facci sapere cosa ne pensi!</h2>
+                <i class="far fa-paper-plane fa-2x mb-2 text-white aeroplanino"></i>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Chi siamo</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">Gianmarco Franchini e Francesco Stella, studenti della magistrale in Informatica Umanistica di Pisa</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50"><address><a href="#!">g.franchini7@studenti.unipi.it</a></address></div>
+								<div class="small text-black-50"><address><a href="#!">f.stella4@studenti.unipi.it</a></address></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Telefono</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Filogreco 2020</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
