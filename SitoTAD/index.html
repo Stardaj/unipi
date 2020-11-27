@@ -44,39 +44,30 @@
             </div>
         </header>
         <!-- Introduzione -->
-        <section class="intro-section text-left" id="intro" role="complementary"> <!-- Ho reso il testo giustificato con text-justify -->
-            <div class="container">
-                    <div class="col mx-auto">
+        <section class="intro-section text-left" id="intro" role="complementary"> <!-- Eliminati i div e applicato gli stili direttamente agli elementi h2 e p (il risultato è lo stesso); reinstaurato l'align left per la leggibilità. -->
                         <h2 class="text-black text-center mb-4">Introduzione</h2>
-                        <p class="text-black text-justify">
+                        <p>
                             La filosofia dell'antica Grecia, che abbraccia un lasso di tempo di più secoli, comprende alcuni fra i nomi più conosciuti della storia dell'umanità e dei personaggi e pensatori più influenti e presenti della cultura occidentale.   
                         </p>
-                        <p class ="text-black text-justify">
+                        <p>
                             Le parole di questi filosofi hanno contribuito a nutrire le coscienze di milioni di lettori, diffondendo storie, racconti e idee dall'enorme fertilità e potenza icastica e/o intellettuale, come il mito della caverna, la morte di Socrate o il principio di non contraddizione aristotelico.
                         </p>
-                        <p class ="text-black text-justify">
+                        <p>
                             In questa pagina, ci proponiamo di far conoscere in modo accessibile i testi della filosofia greca in originale e in traduzione utilizzando la comunicazione aumentativa e alternativa: ogni concetto è accompagnato da un'immagine che ne illustra il senso in modo comprensibile a chi predilige canali di comunicazione non verbali, anche se naturalmente la speranza è che le tavole grafiche facilitino la comprensione del testo anche agli altri utenti!
                         </p>
-                        <p class ="text-black text-justify">
+                        <p>
                             Se, dopo aver esplorato il sito, vorrete lasciarci la vostra opinione su cosa funziona e cosa invece andrebbe migliorato, trovate i nostri contatti nell'omonima sezione. <strong > Buona lettura! </strong>
                         </p>
-                    </div>
-            </div>
         </section>
         <!-- Autori-->
-        <main class="autori-section text-center" id="autori"role="main"> <!--  forse andrebbe cambiato l'id di questa sezione da 'about' a 'autori' o comunque qualcosa di più corretto, anche se meno specifico -->
-            <div class="container" id="filosofi" role="grid"> 
-			<!-- CAMBIATO 
-			-l'id about è diventato autori e la class about-section è diventata autori-section. 
-			-Rimossi alcuni div di troppo.
-			-Aggiunte 4 cards mantenendo un unico card-group (con due row)
-			-Le cards sono solo parzialmente responsive, devo finire il lavoro.-->
-				<h2 class="text-black mb-4">Gli autori più celebri</h2>
-				<p class="text-black">            
-					Cliccando su una delle immagini sottostanti o sulla relativa didascalia, avrai la possibilità di accedere ai testi scritti dal filosofo scelto. Che aspetti? Inizia ad esplorare la filosofia della Grecia antica!
+        <main class="autori-section text-center" id="autori" role="main">
+            <div class="container" id="filosofi" role="grid">
+            	<h2 class="text-black mb-4">Gli autori più celebri</h2>
+				<p>            
+				Cliccando su una delle immagini sottostanti o sulla relativa didascalia, avrai la possibilità di accedere ai testi scritti dal filosofo scelto. Che aspetti? Inizia ad esplorare la filosofia della Grecia antica!
 				</p>
 				<div class="card-group">
-				    <div class="row" id="autori1">
+				    <div class="row" id="autori1" role="row">
 				       <a href="#"> <div class="card">
 					      <img src="https://i1.wp.com/www.boscarol.com/blog/wp-content/uploads/2009/09/plato.jpg?resize=300%2C372" class="card-img-top" alt="Immagine di Platone">
 					         <a href="#" class="btn btn-info" role="gridcell">Platone</a>
@@ -86,6 +77,7 @@
 					    <a href="#" class="btn btn-info" role="gridcell">Aristotele</a>
 				        </div> </a>
 				        <a href="#"> <div class="card">
+				        	<!-- mi raccomando togliere Socrate che non ha scritto niente!-->
 					      <img src="https://www.parlandosparlando.com/wp-content/uploads/2013/10/Scuola-di-Atene-Socrate-Raffaello.jpg" class="card-img-top" alt="Immagine di Socrate">
 					         <a href="#" class="btn btn-info" role="gridcell">Socrate</a>
 				        </div> </a>
@@ -94,7 +86,7 @@
 					         <a href="#" class="btn btn-info" role="gridcell">Eraclito</a>
 				        </div> </a>
 				    </div>
-				  <div class="row" id="autori2">
+				  <div class="row" id="autori2" role="row">
 					    <a href="#"> <div class="card">
 						  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Scuola_di_atene_10.jpg/200px-Scuola_di_atene_10.jpg" class="card-img-top" alt="Immagine di Plotino">
 						    <a href="#" class="btn btn-info" role="gridcell">Plotino</a>
@@ -122,15 +114,15 @@
                 <h2 class="text-white mb-5">Facci sapere cosa ne pensi!</h2>
                 <i class="far fa-paper-plane fa-2x mb-2 text-white aeroplanino"></i>
             </div>
-            <div class="container">
-                <div class="row">
+            <div class="container" role="grid">
+                <div class="row" role ="row">
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Chi siamo</h4>
+                                <h4 class="text-uppercase m-0" role="columnheader" id="nomi">Chi siamo</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50">Gianmarco Franchini e Francesco Stella, studenti della magistrale in Informatica Umanistica di Pisa</div>
+                                <div class="small text-black-50" role="gridcell" aria-describedby="nomi">Gianmarco Franchini e Francesco Stella, studenti della magistrale in Informatica Umanistica di Pisa</div>
                             </div>
                         </div>
                     </div>
@@ -138,10 +130,10 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
+                                <h4 class="text-uppercase m-0" role="columnheader" id="email">Email</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50"><address><a href="#!">g.franchini7@studenti.unipi.it</a></address></div>
-								<div class="small text-black-50"><address><a href="#!">f.stella4@studenti.unipi.it</a></address></div>
+                                <div class="small text-black-50" role="gridcell" aria-describedby="email"><address><a href="#!">g.franchini7@studenti.unipi.it</a></address></div>
+								<div class="small text-black-50" role="gridcell" aria-describedby="email"><address><a href="#!">f.stella4@studenti.unipi.it</a></address></div>
                             </div>
                         </div>
                     </div>
@@ -149,17 +141,17 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Telefono</h4>
+                                <h4 class="text-uppercase m-0" role="columnheader" id="telefono">Telefono</h4>
                                 <hr class="my-4" />
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                                <div class="small text-black-50" role="gridcell" aria-describedby="telefono">+1 (555) 902-8832</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                <div class="social d-flex justify-content-center" role="row">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter" role="gridcell"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f" role="gridcell"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-github" role="gridcell"></i></a>
                 </div>
             </div>
         </section>

@@ -2455,7 +2455,9 @@ input[type=button].btn-block {
 	margin-left:-3.5rem;
 }
 .card-group {
-	margin-top:-5rem;
+	/*margin-top:-5rem; 
+  eliminato perché collassava con il paragrafo sopra, a meno che 
+  non dessi a quest'ultimo un margine di 8 (il che ovviamente non aveva senso) */
 	
 }
 .card > hr {
@@ -2572,7 +2574,7 @@ input[type=button].btn-block {
   }
 }
 #filosofi {
-	margin-top:-5rem;
+	margin-top: 0.6em;
 }
 
 
@@ -8105,8 +8107,6 @@ body {
 }
 #home{
 	margin-top:-1.2rem;
-	
-
 }
 
 #titoli {
@@ -8115,11 +8115,15 @@ body {
 
 .intro-section {
   padding-top: 4rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
  
 }
 .intro-section p {
-  margin-top: 3rem;
+  margin-top: 5rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 
@@ -8129,7 +8133,12 @@ body {
  
 }
 .autori-section p {
-  margin-bottom: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 87%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .projects-section {
@@ -8188,7 +8197,22 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
 
+#div_contatti {
+  margin-right: 0.75em;
+  margin-left:0.75em;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.scheda_contatti {
+  width: 20%;
+  padding-right: 0.1em;
+  padding-left: 0.1em;
+  background-color: white;
+  border-radius: 1em;
 }
 .aeroplanino {
   margin-left: 0.4em;
