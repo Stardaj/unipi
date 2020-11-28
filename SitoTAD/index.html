@@ -16,7 +16,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation-->
+        <!-- Navigation--> <!-- Il pulsante Contact è diventato Contatti, mi sembrava più coerente in italiano dato che non c'è altro scritto in inglese -->
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><button type="button" class="btn btn-primary" id="home">Home</button></a>
@@ -28,13 +28,13 @@
                     <ul class="navbar-nav ml-auto" role="toolbar">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#intro"><button typ ="button" class="btn btn-info">Introduzione</button></a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#autori"><button type="button" class="btn btn-info">Autori</button></a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact_section"><button type="button" class="btn btn-info">Contact</button></a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact_section"><button type="button" class="btn btn-info">Contatti</button></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead"> <!-- migliorata la leggibilità delle scritte nella home cambiando il valore della scala colore dello sfondo da (0.4 a 0.6) -->
             <div class="container d-flex h-100 align-items-center">
                 <div id="titoli" class="mx-auto text-center">
                     <h1 class="text-uppercase">φιλοσοφια</h1>
@@ -44,7 +44,7 @@
             </div>
         </header>
         <!-- Introduzione -->
-        <section class="intro-section text-left" id="intro" role="complementary"> <!-- Eliminati i div e applicato gli stili direttamente agli elementi h2 e p (il risultato è lo stesso); reinstaurato l'align left per la leggibilità. -->
+        <section class="intro-section text-left" id="intro" role="complementary">
                         <h2 class="text-black text-center mb-4">Introduzione</h2>
                         <p>
                             La filosofia dell'antica Grecia, che abbraccia un lasso di tempo di più secoli, comprende alcuni fra i nomi più conosciuti della storia dell'umanità e dei personaggi e pensatori più influenti e presenti della cultura occidentale.   
@@ -60,47 +60,46 @@
                         </p>
         </section>
         <!-- Autori-->
-        <main class="autori-section text-center" id="autori" role="main">
-            <div class="container" id="filosofi" role="grid">
-            	<h2 class="text-black mb-4">Gli autori più celebri</h2>
+        <main class="autori-section text-center" id="autori" role="main"> <!-- Rese responsive le card (ad un livello accettabile ma migliorabile) usando le media query nel css-->
+            <div class="container" id="filosofi" role="grid"> <!-- Inserito Epicuro al posto di Socrate--> 
+            	<h2 class="text-black mb-4">Gli autori più celebri</h2> <!-- Rimossi i link delle immagini e inserite queste da file (salvate nella cartella Img)-->
 				<p>            
 				Cliccando su una delle immagini sottostanti o sulla relativa didascalia, avrai la possibilità di accedere ai testi scritti dal filosofo scelto. Che aspetti? Inizia ad esplorare la filosofia della Grecia antica!
 				</p>
 				<div class="card-group">
-				    <div class="row" id="autori1" role="row">
+				    <div class="row" role="row">
 				       <a href="#"> <div class="card">
-					      <img src="https://i1.wp.com/www.boscarol.com/blog/wp-content/uploads/2009/09/plato.jpg?resize=300%2C372" class="card-img-top" alt="Immagine di Platone">
+					      <img src="Img/Platone.jpg" class="card-img-top" alt="Immagine di Platone">
 					         <a href="#" class="btn btn-info" role="gridcell">Platone</a>
 				       </div> </a>
 				        <a href="#"> <div class="card">
-					    <img src="https://mirellapuccio.files.wordpress.com/2016/07/aristotele.jpg" class="card-img-top" alt="Immagine di Aristotele">
+					    <img src="Img/Aristotele.jpg" class="card-img-top" alt="Immagine di Aristotele">
 					    <a href="#" class="btn btn-info" role="gridcell">Aristotele</a>
 				        </div> </a>
 				        <a href="#"> <div class="card">
-				        	<!-- mi raccomando togliere Socrate che non ha scritto niente!-->
-					      <img src="https://www.parlandosparlando.com/wp-content/uploads/2013/10/Scuola-di-Atene-Socrate-Raffaello.jpg" class="card-img-top" alt="Immagine di Socrate">
-					         <a href="#" class="btn btn-info" role="gridcell">Socrate</a>
+					      <img src="Img/Epicuro.jpg" class="card-img-top" alt="Immagine di Epicuro">
+					         <a href="#" class="btn btn-info" role="gridcell">Epicuro</a>
 				        </div> </a>
 				        <a href="#"> <div class="card">
-					      <img src="https://staticfanpage.akamaized.net/wp-content/uploads/2015/10/168965811.jpg" class="card-img-top" alt="Immagine di Eraclito">
+					      <img src="Img/Eraclito.jpg" class="card-img-top" alt="Immagine di Eraclito">
 					         <a href="#" class="btn btn-info" role="gridcell">Eraclito</a>
 				        </div> </a>
 				    </div>
-				  <div class="row" id="autori2" role="row">
+				  <div class="row" role="row">
 					    <a href="#"> <div class="card">
-						  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Scuola_di_atene_10.jpg/200px-Scuola_di_atene_10.jpg" class="card-img-top" alt="Immagine di Plotino">
+						  <img src="Img/Plotino.jpg" class="card-img-top" alt="Immagine di Plotino">
 						    <a href="#" class="btn btn-info" role="gridcell">Plotino</a>
 					    </div> </a>
 					      <a href="#"> <div class="card">
-						    <img src="https://livenetwork.blob.core.windows.net/columns/15075/gallery/69364_8d8419_399x300.jpg" class="card-img-top" alt="Immagine di Parmenide">
+						    <img src="Img/Parmenide.jpg" class="card-img-top" alt="Immagine di Parmenide">
 						      <a href="#" class="btn btn-info" role="gridcell">Parmenide</a>
 					    </div> </a>
 					      <a href="#"> <div class="card">
-						    <img src="https://www.sites.google.com/site/philosophicalpower/_/rsrc/1302875079965/home/anassimandro/Anaximander%282%29.jpg" class="card-img-top" alt="Immagine di Anassimandro">
+						    <img src="Img/Anassimandro.jpg" class="card-img-top" alt="Immagine di Anassimandro">
 						      <a href="#" class="btn btn-info" role="gridcell">Anassimandro</a>
 					    </div> </a>
 					    <a href="#"> <div class="card">
-						  <img src="https://i.pinimg.com/originals/ed/fb/cf/edfbcf1972884d477f9365c1e4df6c23.jpg" class="card-img-top" alt="Immagine di Democrito">
+						  <img src="Img/Democrito.jpg" class="card-img-top" alt="Immagine di Democrito">
 						    <a href="#" class="btn btn-info" role="gridcell">Democrito</a>
 					    </div> </a>
 				  </div>
