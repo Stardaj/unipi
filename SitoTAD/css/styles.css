@@ -353,6 +353,11 @@ pre code {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
   }
+  .col-md-6 {
+	left:25%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
   .col-md-10 {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
@@ -664,24 +669,27 @@ fieldset:disabled a.btn {
   border-color: #17a2b8;
 }
 
-.btn-danger:focus, .btn-danger.focus {
-  color: #fff;
-  background-color: #c82333;
-  border-color: #bd2130;
-  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+.btn-autor {
+	color: #fff;
+	background-color: #ffb300;
+	border-color: #ffb300;
 }
-.btn-danger.disabled, .btn-danger:disabled {
-  color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
+btn-autor:hover {
+	color: #fff;
+	background-color: #f79902;
+	border-color: #c9850e;
 }
-.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
+
+.btn-autor:focus, .btn-autor.focus {
   color: #fff;
-  background-color: #bd2130;
-  border-color: #b21f2d;
+  background-color: #f79902;
+  border-color: #c9850e;
+  box-shadow: 0 0 0 0.2rem rgba(214, 153, 39, 0.5);
 }
-.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-danger.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+.btn-autor.disabled, .btn-autor:disabled {
+  color: #fff;
+  background-color: #ffb300;
+  border-color: #ffb300;
 }
 
 .btn-light {
@@ -899,28 +907,28 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
 }
 
-.btn-outline-danger {
+.btn-outline-autor {
   color: #dc3545;
   border-color: #dc3545;
 }
-.btn-outline-danger:hover {
+.btn-outline-autor:hover {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-outline-danger:focus, .btn-outline-danger.focus {
+.btn-outline-autor:focus, .btn-outline-autor.focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
-.btn-outline-danger.disabled, .btn-outline-danger:disabled {
+.btn-outline-autor.disabled, .btn-outline-autor:disabled {
   color: #dc3545;
   background-color: transparent;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active, .show > .btn-outline-danger.dropdown-toggle {
+.btn-outline-autor:not(:disabled):not(.disabled):active, .btn-outline-autor:not(:disabled):not(.disabled).active, .show > .btn-outline-autor.dropdown-toggle {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
 }
-.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-danger.dropdown-toggle:focus {
+.btn-outline-autor:not(:disabled):not(.disabled):active:focus, .btn-outline-autor:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-autor.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
 
@@ -8142,6 +8150,34 @@ body {
   text-align: left;
 }
 
+.platone-section {
+	
+  padding-top: 9rem;
+  padding-bottom: 1rem;
+  
+  
+}
+.platone-section p {
+  margin-top: 5rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+#mito {
+  background: url("https://miro.medium.com/max/1200/1*xsBZ-TILP8uiUCZ616waBA.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+#simposio {
+  background: url("https://www.doppiozero.com/sites/default/files/david_-_the_death_of_socrates_0.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
 .autori-section {
   padding-top: 3rem;
