@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Grayscale - Start Bootstrap Theme</title>
+        <title>Platone</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -18,11 +18,11 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation--> <!-- Il pulsante Contact è diventato Contatti, mi sembrava più coerente in italiano dato che non c'è altro scritto in inglese -->
+        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="index.html"><button type="button" class="btn btn-primary" id="home">Home</button></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="opzioni di navigazione">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
@@ -35,15 +35,15 @@
                 </div>
             </div>
         </nav>
-       <section class="platone-section" id="platone" role="complementary">
+       <main class="platone-section" id="platone" role="main">
 			 
 			 <pre> </pre>
             <div id="mito" class="card col-md-6">
 			 <div class="card-body text-center">
 			  <h2 class="card-title text-left text-white user-select-none"><strong>Il mito della caverna</strong></h2>
 	          <pre> </pre>
-              <a href="#mitoitaliano" class="btn btn-primary border border-white" data-toggle="collapse"  style="margin:1%">Leggi in italiano</a> 
-			  <a href="#mitogreco" class="btn btn-secondary border border-white" data-toggle="collapse" style="margin:1%">Impara in greco</a>
+              <a href="#mitoitaliano" aria-controls="mitoitaliano" aria-expanded="false" class="btn btn-primary border border-white" data-toggle="collapse"  style="margin:1%" role="button">Leggi in italiano</a> 
+			  <a href="#mitogreco" aria-controls="mitogreco" aria-expanded="false" class="btn btn-secondary border border-white" data-toggle="collapse" style="margin:1%" role="button">Impara in greco</a>
               </div>
 			</div>
 			<pre> </pre>
@@ -75,8 +75,8 @@
 			<pre> </pre>
 			<pre> </pre>
 			
-       </section>
-	  <main class="autori-section text-center" id="autori" role="main">
+       </main>
+	  <aside class="autori-section text-center" id="autori" role="complementary">
             <div class="container" id="filosofi" role="grid"> 
             	<h2 class="text-black mb-4">Scopri altri filosofi!</h2> 
 				<div class="card-group">
@@ -118,7 +118,7 @@
 				  </div>
 				</div>
             </div>
-        </main>
+        </aside>
 	   
        
         <!-- Contact-->
