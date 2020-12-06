@@ -284,6 +284,9 @@ pre code {
   margin-left: auto;
 }
 
+
+
+  
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -403,7 +406,9 @@ pre code {
 }
 
 @media (max-width: 575.98px) {
-
+     .sym-card{
+		 width:5%;
+	 }
 }
 
 @media (max-width: 767.98px) {
@@ -8179,6 +8184,50 @@ body {
   background-size: cover;
 }
 
+
+#mitoitaliano{
+	padding:auto;
+}
+.sym-card {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+	margin:0.3rem;
+	display: inline-block;
+    width: 18%;
+	
+}
+
+  
+.sym-card> div {
+    background: #fff;
+    display: block;
+    outline: none;
+    position: relative;
+}
+
+.sym-img {
+	height:18rem;
+	width:100%;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	padding:2rem;
+}
+.sym-title {
+	cursor:pointer;
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
 .autori-section {
   padding-top: 3rem;
   padding-bottom: 10rem;
@@ -8204,6 +8253,27 @@ body {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
+}
+@media (max-width: 992px) {
+	.sym-card {
+		width:25%;
+		height:15rem;
+		margin-left:5%;
+	}
+}
+@media (max-width: 766px) {
+	.sym-card {
+		width:40%;
+		height:15rem;
+		margin-left:5%;
+	}
+}
+@media (max-width: 420px) {
+	.sym-card {
+		width:80%;
+		height:15rem;
+		margin-left:5%;
+	}
 }
 .projects-section .project-text {
   padding: 3rem;
