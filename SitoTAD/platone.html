@@ -36,8 +36,7 @@
             </div>
         </nav>
        <main class="platone-section" id="platone" role="main">
-			 
-			 <pre> </pre>
+			<pre> </pre>
             <div id="mito" class="card col-md-6">
 			 <div class="card-body text-center">
 			  <h2 class="card-title text-left text-white user-select-none"><strong>Il mito della caverna</strong></h2>
@@ -49,6 +48,11 @@
 			<pre> </pre>
 			<div id="divpadre">
 			<div class="collapse container-fluid" id="mitoitaliano" data-parent="#divpadre">
+                <div id="modal_italiano" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" />
+                    <div class="caption"></div>
+                </div>
                 <div class="sym-card">
                     <img src="Img/0_Immagina.png" class="sym-img" alt="Immagina">
                     <span class="sym-title"><h4><strong>Immagina</strong></h4></span>
@@ -475,772 +479,350 @@
                 </div>
 			</div>
 			<div class="collapse container-fluid" id="mitogreco" data-parent="#divpadre">
-			
 				<div class="sym-card">
-				    <img id="myImg0" src="Img_greco/0.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/0.png" class="sym-img" alt="immagina">
 				    <span class="sym-title"><h4><strong>ἰδὲ</strong></h4></span>
 				</div>
-				<!-- Schema x Modal -->
-				  <!-- The Modal -->
-				<div id="myModal0" class="modal">
-
-				  <!-- The Close Button -->
-				  <span class="close">&times;</span>
-
-				  <!-- Modal Content (The Image) -->
-				  <img class="modal-content" id="Img0">
-
-				  <!-- Modal Caption (Image Text) -->
-				  
-                <div class="caption"></div>
+                <div id="modal_greco" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" />
+                    <div class="caption"></div>
                 </div>
 				<div class="sym-card">
-				    <img id="myImg1" src="Img_greco/1.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/1.png" class="sym-img" alt="(infatti)">
 				    <span class="sym-title"><h4><strong>γὰρ</strong></h4></span>
 				</div>	
-				<div id="myModal1" class="modal" >
-					  <span class="close"> &times;</span>
-					  <img class="modal-content" id="Img1">
-					  <div class="caption"></div>
-				</div>
 				<div class="sym-card">
-				    <img id="myImg2" src="Img_greco/2_3.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/2_3.png" class="sym-img" alt="alcuni uomini">
 				    <span class="sym-title"><h4><strong>ἀνθρώπους</strong></h4></span>
 				</div>
-				<div id="myModal2" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img2">
-					  <div class="caption"></div>
-				</div>
 				<div class="sym-card">
-				    <img id="myImg4" src="Img_greco/4.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/4.png" class="sym-img" alt="come">
 				    <span class="sym-title"><h4><strong>οἷον</strong></h4></span>
 				</div>
-				<div id="myModal4" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img4">
-					  <div class="caption"></div>
-				</div>
 				<div class="sym-card">
-				    <img id="myImg5" src="Img_greco/5.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/5.png" class="sym-img" alt="in">
 				    <span class="sym-title"><h4><strong>ἐν</strong></h4></span>
 				</div>
-				<div id="myModal5" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img5">
-					  <div class="caption"></div>
-			    </div>
 				<div class="sym-card">
-				    <img id="myImg6" src="Img_greco/6.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/6.png" class="sym-img" alt="testo_greco">
 				    <span class="sym-title"><h4><strong>SUCCESSIVA</strong></h4></span>
 				</div>
-				<div id="myModal6" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img6">
-					  <div class="caption"></div>
-				</div>
 				<div class="sym-card">
-				    <img id="myImg7" src="Img_greco/7.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/7.png" class="sym-img" alt="sotterranea">
 				    <span class="sym-title"><h4><strong>καταγείῳ</strong></h4></span>
 				</div>
-				<div id="myModal7" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img7">
-					  <div class="caption"></div>
-				</div>
 				<div class="sym-card">
-				    <img id="myImg8" src="Img_greco/8.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/8.png" class="sym-img" alt="abitazione (dat.)">
 				    <span class="sym-title"><h4><strong>οἰκήσει</strong></h4></span>
 				</div>
-				<div id="myModal8" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img8">
-				<div class="caption"></div>
-				</div>
 				<div class="sym-card">
-				    <img id="myImg9" src="Img_greco/9.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/9.png" class="sym-img" alt="caverna (dat.)">
 				    <span class="sym-title"><h4><strong>σπηλαιώδει</strong></h4></span>
 				</div>
-				<div id="myModal9" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img9">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg10" src="Img_greco/10.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/10.png" class="sym-img" alt="aperta">
 				    <span class="sym-title"><h4><strong>ἀναπεπταμένην</strong></h4></span>
 				</div>
-				<div id="myModal10" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img10">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg11" src="Img_greco/11.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/11.png" class="sym-img" alt="verso">
 				    <span class="sym-title"><h4><strong>πρὸς</strong></h4></span>
 				</div>
-				<div id="myModal11" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img11">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg3" src="Img_greco/18.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/18.png" class="sym-img" alt="la">
 				    <span class="sym-title"><h4><strong>τὸ</strong></h4></span>
 				</div>
-				<div id="myModal3" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img3">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg12" src="Img_greco/12.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/12.png" class="sym-img" alt="luce">
 				    <span class="sym-title"><h4><strong>φῶς</strong></h4></span>
 				</div>
-				<div id="myModal12" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img12">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg13" src="Img_greco/13.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/13.png" class="sym-img" alt="l'entrata">
 				    <span class="sym-title"><h4><strong>τὴν εἴσοδον</strong></h4></span>
 				</div>
-				<div id="myModal13" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img13">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg14" src="Img_greco/14.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/14.png" class="sym-img" alt="avente (dat.)">
 				    <span class="sym-title"><h4><strong>ἐχούσῃ</strong></h4></span>
 				</div>
-				<div id="myModal14" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img14">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg15" src="Img_greco/15.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/15.png" class="sym-img" alt="lunga">
 				    <span class="sym-title"><h4><strong>μακρὰν</strong></h4></span>
 				</div>
-				<div id="myModal15" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img15">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg16" src="Img_greco/16.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/16.png" class="sym-img" alt="lungo">
 				    <span class="sym-title"><h4><strong>παρὰ</strong></h4></span>
 				</div>
-				<div id="myModal16" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img16">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg17" src="Img_greco/17.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/17.png" class="sym-img" alt="tutta">
 				    <span class="sym-title"><h4><strong>πᾶν</strong></h4></span>
 				</div>
-				<div id="myModal17" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img17">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg18" src="Img_greco/18.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/18.png" class="sym-img" alt="la">
 				    <span class="sym-title"><h4><strong>τὸ</strong></h4></span>
 				</div>
-				<div id="myModal18" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img18">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg119" src="Img_greco/19.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/19.png" class="sym-img" alt="caverna">
 				    <span class="sym-title"><h4><strong>σπήλαιον</strong></h4></span>
 				</div>
-				<div id="myModal19" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img19">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg20" src="Img_greco/20.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/20.png" class="sym-img" alt="in">
 				    <span class="sym-title"><h4><strong>ἐν</strong></h4></span>
 				</div>
-				<div id="myModal20" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img20">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg21" src="Img_greco/21.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/21.png" class="sym-img" alt="questa (dat.)">
 				    <span class="sym-title"><h4><strong>ταύτῃ</strong></h4></span>
 				</div>
-				<div id="myModal21" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img21">
-					  <div id="caption"></div>
-					  </div>
+	
 				<div class="sym-card">
-				    <img id="myImg22" src="Img_greco/22.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/22.png" class="sym-img" alt="da">
 				    <span class="sym-title"><h4><strong>ἐκ</strong></h4></span>
 				</div>
-				<div id="myModal22" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img22">
-					  <div id="caption"></div>
-					  </div>
+	
 				<div class="sym-card">
-				    <img id="mymg23" src="Img_greco/23.png" class="sym-img" alt="testo_greco">
+				    <img id="mymg23" src="Img_greco/23.png" class="sym-img" alt="bambini (gen.)">
 				    <span class="sym-title"><h4><strong>παίδων</strong></h4></span>
 				</div>
-				<div id="myModal23" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img23">
-					  <div id="caption"></div>
-					  </div>
+	
 				<div class="sym-card">
-				    <img id="myImg24" src="Img_greco/24.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/24.png" class="sym-img" alt="che sono">
 				    <span class="sym-title"><h4><strong>ὄντας</strong></h4></span>
 				</div>
-				<div id="myModal24" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img24">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg25" src="Img_greco/25.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/25.png" class="sym-img" alt="in">
 				    <span class="sym-title"><h4><strong>ἐν</strong></h4></span>
 				</div>
-				<div id="myModal25" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img25">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg26" src="Img_greco/26.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/26.png" class="sym-img" alt="catene (dat.)">
 				    <span class="sym-title"><h4><strong>δεσμοῖς</strong></h4></span>
 				</div>
-				<div id="myModal26" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img26">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg27" src="Img_greco/27.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/27.png" class="sym-img" alt="sia">
 				    <span class="sym-title"><h4><strong>καὶ</strong></h4></span>
 				</div>
-				<div id="myModal27" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img27">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="Img28" src="Img_greco/28.png" class="sym-img" alt="testo_greco">
+				    <img id="Img28" src="Img_greco/28.png" class="sym-img" alt="i">
 				    <span class="sym-title"><h4><strong>τὰ</strong></h4></span>
 				</div>
-				<div id="myModal28" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img28">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg29" src="Img_greco/29.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/29.png" class="sym-img" alt="colli (acc. di relazione)">
 				    <span class="sym-title"><h4><strong>σκέλη</strong></h4></span>
 				</div>
-				<div id="myModal29" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img29">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg30" src="Img_greco/30.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/30.png" class="sym-img" alt="sia">
 				    <span class="sym-title"><h4><strong>καὶ</strong></h4></span>
 				</div>
-				<div id="myModal30" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img30">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg31" src="Img_greco/31.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/31.png" class="sym-img" alt="le">
 				    <span class="sym-title"><h4><strong>τοὺς</strong></h4></span>
 				</div>
-				<div id="myModal31" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img31">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg32" src="Img_greco/32.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/32.png" class="sym-img" alt="gambe (acc. di relazione)">
 				    <span class="sym-title"><h4><strong>αὐχένας</strong></h4></span>
 				</div>
-				<div id="myModal32" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img32">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg33" src="Img_greco/33.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/33.png" class="sym-img" alt="cosicché">
 				    <span class="sym-title"><h4><strong>ὥστε</strong></h4></span>
 				</div>
-				<div id="myModal33" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img33">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg34" src="Img_greco/34.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/34.png" class="sym-img" alt="restano (fermi) (inf.)">
 				    <span class="sym-title"><h4><strong>μένειν</strong></h4></span>
 				</div>
-				<div id="myModal34" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img34">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg35" src="Img_greco/30.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/30.png" class="sym-img" alt="(sia)">
 				    <span class="sym-title"><h4><strong>(τε)</strong></h4></span>
 				</div>
-				<div id="myModal35" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img35">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg36" src="Img_greco/36.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/36.png" class="sym-img" alt="essi">
 				    <span class="sym-title"><h4><strong>αὐτοὺς</strong></h4></span>
 				</div>
-				<div id="myModal36" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img36">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg38" src="Img_greco/38.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/38.png" class="sym-img" alt="(sia) davanti">
 				    <span class="sym-title"><h4><strong>εἴς (τε) τὸ πρόσθεν</strong></h4></span>
 				</div>
-				<div id="myModal38" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img38">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg39" src="Img_greco/39.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/39.png" class="sym-img" alt="solo">
 				    <span class="sym-title"><h4><strong>μόνον</strong></h4></span>
 				</div>
-				<div id="myModal39" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img39">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg40" src="Img_greco/40.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/40.png" class="sym-img" alt="guardano (inf.)">
 				    <span class="sym-title"><h4><strong>ὁρᾶν</strong></h4></span>
 				</div>
-				<div id="myModal40" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img40">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg41" src="Img_greco/41.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/41.png" class="sym-img" alt="e circolarmente">
 				    <span class="sym-title"><h4><strong>κύκλῳ δὲ</strong></h4></span>
 				</div>
-				<div id="myModal41" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img41">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg42" src="Img_greco/42.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/42.png" class="sym-img" alt="le">
 				    <span class="sym-title"><h4><strong>τὰς</strong></h4></span>
 				</div>
-				<div id="myModal42" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img42">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg43" src="Img_greco/43.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/43.png" class="sym-img" alt="teste">
 				    <span class="sym-title"><h4><strong>κεφαλὰς</strong></h4></span>
 				</div>
-				<div id="myModal43" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img43">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg44" src="Img_greco/44.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/44.png" class="sym-img" alt="a causa">
 				    <span class="sym-title"><h4><strong>ὑπὸ</strong></h4></span>
 				</div>
-				<div id="myModal44" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img44">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg45" src="Img_greco/45.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/45.png" class="sym-img" alt="del">
 				    <span class="sym-title"><h4><strong>τοῦ</strong></h4></span>
 				</div>
-				<div id="myModal45" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img45">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg46" src="Img_greco/46.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/46.png" class="sym-img" alt="vincolo">
 				    <span class="sym-title"><h4><strong>δεσμοῦ</strong></h4></span>
 				</div>
-				<div id="myModal46" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img46">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg47" src="Img_greco/47.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/47.png" class="sym-img" alt="(sono) impossibilitati">
 				    <span class="sym-title"><h4><strong>ἀδυνάτους</strong></h4></span>
 				</div>
-				<div id="myModal47" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img47">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg48" src="Img_greco/48.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/48.png" class="sym-img" alt="muovere">
 				    <span class="sym-title"><h4><strong>περιάγειν</strong></h4></span>
 				</div>
-				<div id="myModal48" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img48">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg49" src="Img_greco/49_50.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/49_50.png" class="sym-img" alt="e della luce">
 				    <span class="sym-title"><h4><strong>φῶς δὲ</strong></h4></span>
 				</div>
-				<div id="myModal49" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img49">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg51" src="Img_greco/51_52.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/51_52.png" class="sym-img" alt="a loro">
 				    <span class="sym-title"><h4><strong>αὐτοῖς</strong></h4></span>
 				</div>
-				<div id="myModal51" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img51">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg53" src="Img_greco/53_54_55.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/53_54_55.png" class="sym-img" alt="di un fuoco">
 				    <span class="sym-title"><h4><strong>πυρὸς</strong></h4></span>
 				</div>
-				<div id="myModal53" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img53">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg56" src="Img_greco/56.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/56.png" class="sym-img" alt="dall'alto">
 				    <span class="sym-title"><h4><strong>ἄνωθεν</strong></h4></span>
 				</div>
-				<div id="myModal56" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img56">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg57" src="Img_greco/57.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/57.png" class="sym-img" alt="e">
 				    <span class="sym-title"><h4><strong>καὶ</strong></h4></span>
 				</div>
-				<div id="myModal57" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img57">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg58" src="Img_greco/58_59.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/58_59.png" class="sym-img" alt="da lontano">
 				    <span class="sym-title"><h4><strong>πόρρωθεν</strong></h4></span>
 				</div>
-				<div id="myModal58" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img58">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg60" src="Img_greco/60.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/60.png" class="sym-img" alt="acceso">
 				    <span class="sym-title"><h4><strong>καόμενον</strong></h4></span>
 				</div>
-				<div id="myModal60" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img60">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg61" src="Img_greco/61.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/61.png" class="sym-img" alt="da dietro">
 				    <span class="sym-title"><h4><strong>ὄπισθεν</strong></h4></span>
 				</div>
-				<div id="myModal61" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img61">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg63" src="Img_greco/63.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/63.png" class="sym-img" alt="di loro">
 				    <span class="sym-title"><h4><strong>αὐτῶν,</strong></h4></span>
 				</div>
-				<div id="myModal63" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img63">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg64" src="Img_greco/64.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/64.png" class="sym-img" alt="e nel mezzo">
 				    <span class="sym-title"><h4><strong>μεταξὺ δὲ</strong></h4></span>
 				</div>
-				<div id="myModal64" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img64">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg66" src="Img_greco/66.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/66.png" class="sym-img" alt="del">
 				    <span class="sym-title"><h4><strong>τοῦ</strong></h4></span>
 				</div>
-				<div id="myModal66" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img66">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg67" src="Img_greco/67.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/67.png" class="sym-img" alt="fuoco">
 				    <span class="sym-title"><h4><strong>πυρὸς</strong></h4></span>
 				</div>
-				<div id="myModal67" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img67">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg68" src="Img_greco/68.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/68.png" class="sym-img" alt="e">
 				    <span class="sym-title"><h4><strong>καὶ</strong></h4></span>
 				</div>
-				<div id="myModal68" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img68">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg69" src="Img_greco/69.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/69.png" class="sym-img" alt="dei">
 				    <span class="sym-title"><h4><strong>τῶν</strong></h4></span>
 				</div>
-				<div id="myModal69" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img69">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg70" src="Img_greco/70.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/70.png" class="sym-img" alt="prigionieri">
 				    <span class="sym-title"><h4><strong>δεσμωτῶν</strong></h4></span>
 				</div>
-				<div id="myModal70" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img70">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg71" src="Img_greco/71.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/71.png" class="sym-img" alt="in alto">
 				    <span class="sym-title"><h4><strong>ἐπάνω</strong></h4></span>
 				</div>
-				<div id="myModal71" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img71">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg72" src="Img_greco/72_73.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/72_73.png" class="sym-img" alt="un sentiero">
 				    <span class="sym-title"><h4><strong>ὁδόν</strong></h4></span>
 				</div>
-				<div id="myModal72" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img72">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg74" src="Img_greco/74.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/74.png" class="sym-img" alt="lungo">
 				    <span class="sym-title"><h4><strong>παρ᾽</strong></h4></span>
 				</div>
-				<div id="myModal74" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img74">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg75" src="Img_greco/75_76.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/75_76.png" class="sym-img" alt="il quale">
 				    <span class="sym-title"><h4><strong>ἣν</strong></h4></span>
 				</div>
-				<div id="myModal75" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img75">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg77" src="Img_greco/77.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/77.png" class="sym-img" alt="immagina">
 				    <span class="sym-title"><h4><strong>ἰδὲ</strong></h4></span>
 				</div>
-				<div id="myModal77" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img77">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg79" src="Img_greco/79_80.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/79_80.png" class="sym-img" alt="un muretto">
 				    <span class="sym-title"><h4><strong>τειχίον </strong></h4></span>
 				</div>
-				<div id="myModal79" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img79">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg82" src="Img_greco/82.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/82.png" class="sym-img" alt="costruito">
 				    <span class="sym-title"><h4><strong>παρῳκοδομημένον</strong></h4></span>
 				</div>
-				<div id="myModal82" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img82">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg83" src="Img_greco/83.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/83.png" class="sym-img" alt="come">
 				    <span class="sym-title"><h4><strong>ὥσπερ</strong></h4></span>
 				</div>
-				<div id="myModal83" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img83">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg84" src="Img_greco/84_85.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/84_85.png" class="sym-img" alt="per i">
 				    <span class="sym-title"><h4><strong>τοῖς</strong></h4></span>
 				</div>
-				<div id="myModal84" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img84">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg86" src="Img_greco/86.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/86.png" class="sym-img" alt="burattinai">
 				    <span class="sym-title"><h4><strong>θαυματοποιοῖς</strong></h4></span>
 				</div>
-				<div id="myModal86" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img86">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg87" src="Img_greco/87.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/87.png" class="sym-img" alt="davanti">
 				    <span class="sym-title"><h4><strong>πρὸ</strong></h4></span>
 				</div>
-				<div id="myModal87" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img87">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg88" src="Img_greco/88.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/88.png" class="sym-img" alt="agli">
 				    <span class="sym-title"><h4><strong>τῶν</strong></h4></span>
 				</div>
-				<div id="myModal88" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img88">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg89" src="Img_greco/89.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/89.png" class="sym-img" alt="uomini">
 				    <span class="sym-title"><h4><strong>ἀνθρώπων</strong></h4></span>
 				</div>
-				<div id="myModal89" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img89">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg91" src="Img_greco/91.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/91.png" class="sym-img" alt="c'è">
 				    <span class="sym-title"><h4><strong>πρόκειται</strong></h4></span>
 				</div>
-				<div id="myModal91" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img91">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg85" src="Img_greco/85.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/85.png" class="sym-img" alt="una">
 				    <span class="sym-title"><h4><strong>τὰ</strong></h4></span>
 				</div>
-				<div id="myModal85" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img85">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg93" src="Img_greco/93.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/93.png" class="sym-img" alt="barriera">
 				    <span class="sym-title"><h4><strong>παραφράγματα</strong></h4></span>
 				</div>
-				<div id="myModal93" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img93">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg94" src="Img_greco/94.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/94.png" class="sym-img" alt="sopra">
 				    <span class="sym-title"><h4><strong> ὑπὲρ</strong></h4></span>
 				</div>
-				<div id="myModal94" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img94">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg95" src="Img_greco/95.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/95.png" class="sym-img" alt="alla quale">
 				    <span class="sym-title"><h4><strong>ὧν</strong></h4></span>
 				</div>
-				<div id="myModal95" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img95">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg97" src="Img_greco/97.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/97.png" class="sym-img" alt="le">
 				    <span class="sym-title"><h4><strong>τὰ</strong></h4></span>
 				</div>
-				<div id="myModal97" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img97">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg98" src="Img_greco/98.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/98.png" class="sym-img" alt="marionette">
 				    <span class="sym-title"><h4><strong>θαύματα</strong></h4></span>
 				</div>
-				<div id="myModal98" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img98">
-					  <div class="caption"></div>
-					  </div>
 				<div class="sym-card">
-				    <img id="myImg96" src="Img_greco/96.png" class="sym-img" alt="testo_greco">
+				    <img src="Img_greco/96.png" class="sym-img" alt="manovrano">
 				    <span class="sym-title"><h4><strong>δεικνύασιν</strong></h4></span>
 				</div>
-				<div id="myModal96" class="modal">
-					  <span class="close">&times;</span>
-					  <img class="modal-content" id="Img96">
-					  <div class="caption"></div>
-					  </div>
             </div>
 			</div>
 			<pre> </pre>
