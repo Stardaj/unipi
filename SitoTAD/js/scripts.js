@@ -37,13 +37,13 @@
                 var fonte = $(this).attr("src");
                 $("#modal_italiano > img").attr("src",fonte);
                 var traduzione = $(this).attr("alt");
-                $("#modal_italiano > div").attr("innerHTML", traduzione);
+                $("#modal_italiano > div").text(traduzione);
             } else{
                 $("#modal_greco").css("display","block");
                 var fonte = $(this).attr("src");
                 $("#modal_greco > img").attr("src",fonte);
                 var traduzione = $(this).attr("alt");
-                $("#modal_greco > div").attr("innerHTML", traduzione);
+                $("#modal_greco > div").text(traduzione);
             }
         })
     })
