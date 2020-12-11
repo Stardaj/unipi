@@ -2452,7 +2452,6 @@ input[type=button].btn-block {
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
-
 .card {
   position: relative;
   display: flex;
@@ -2467,7 +2466,7 @@ input[type=button].btn-block {
 
 .card-group {
 	/*margin-top:-5rem; 
-  eliminato perché collassava con il paragrafo sopra, a meno che 
+  eliminato perchÃ© collassava con il paragrafo sopra, a meno che 
   non dessi a quest'ultimo un margine di 8 (il che ovviamente non aveva senso) */
 	
 }
@@ -2566,9 +2565,61 @@ input[type=button].btn-block {
 .card-img-top,
 .card-img-bottom{
 	flex-shrink: 0;
-	width:15rem;
-	max-height:11rem;
+	width:100%;
+	max-height:12rem;
 }
+
+.cards{
+  width:15rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+@media (max-width: 375px){
+	.cards{
+		
+		
+	}
+}
+@media (max-width: 430px){
+	.card-group{
+		
+		
+	}
+	.cards{
+		max-width:20rem;
+		
+	}
+	.card-img-top{
+		
+		height:16rem;
+	}	
+}
+@media (max-width: 503px){
+	.card-group{
+		left:3%;
+	}
+	.cards{
+		width:25rem;
+	}
+	.card-img-top{
+		max-height:20rem;
+	}	
+}
+
+@media (max-width: 576px){
+	.card-group{
+		margin-left:3%;
+	}
+}
+
 
 @media (min-width: 576px) {
   .card-deck {
@@ -2591,26 +2642,7 @@ input[type=button].btn-block {
 .card{
 		padding:0.25rem;
 	}
-@media (max-width: 350px){
-	.card-group{
-		margin-left:-12%;
-		margin-right:-12%;
-	}
-		
-	
-}
-@media (max-width: 576px){
-	.row{
-		display:inherit;
-	}
-	.card-img-top{
-		width:100%;
-	}
-	.card-group{
-		padding-left:18%;
-		padding-right:18%;
-	}
-}
+
 @media (min-width: 576px) {
   .card-group {
     display: flex;
