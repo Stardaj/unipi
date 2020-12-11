@@ -8045,11 +8045,12 @@ body {
 .caption {
   margin: auto;
   display: block;
-  width: 20%;
+  width: 100%;
   text-align: center;
   color: #ccc;
-  padding: 10px 0;
+  padding: 10px 3px; 
   height: 150px;
+  font-size: 6em;
 }
 
 /* Add Animation - Zoom in the Modal */
