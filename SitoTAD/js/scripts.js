@@ -29,7 +29,6 @@
             }
         }
     });
-	
     $('[class="sym-img"]').each(function(){
         $(this).click(function(){
             if($(this).parent().parent().attr('id') == "mitoitaliano") {
@@ -46,11 +45,46 @@
                 $("#modal_greco > div").text(traduzione);
             }
         })
+        $(this).keyup(function(event){
+            if(event.which == "13") {
+                $('a, button, img[tabindex="0"]').not('[tabindex="-1"]').each(function() {
+                        $(this).attr('tabindex',"-2");
+                })
+                if($(this).parent().parent().attr('id') == "mitoitaliano") {
+                    $("[id='close_ita']").attr('tabindex',"0");
+                    $("#modal_italiano").css("display","block");
+                    var fonte = $(this).attr("src");
+                    $("#modal_italiano > img").attr("src",fonte);
+                    var traduzione = $(this).attr("alt");
+                    $("#modal_italiano > div").text(traduzione);
+                    $("[id='close_ita']").focus();
+                } else{
+                    $("[id='close_greco']").attr('tabindex',"0");
+                    $("#modal_greco").css("display","block");
+                    var fonte = $(this).attr("src");
+                    $("#modal_greco > img").attr("src",fonte);
+                    var traduzione = $(this).attr("alt");
+                    $("#modal_greco > div").text(traduzione);
+                    $("[id='close_greco']").focus();
+                }
+            }
+        })
     })
 
     $("[class='close']").each(function(){
         $(this).click(function(){
             $(this).parent().css("display","none");
+        })
+        $(this).keyup(function(event){
+            if(event.which == "13") {
+                $('[tabindex=-2]').each(function() {
+                        $(this).attr('tabindex',"0");
+                    })
+                $("[class='close']").each(function(){
+                        $(this).attr('tabindex',"-1");
+                    })
+                $(this).parent().css("display","none");
+            }
         })
     })
 

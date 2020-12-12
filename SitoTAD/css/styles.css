@@ -2038,6 +2038,8 @@ input[type=button].btn-block {
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
 }
+
+
 .nav-tabs .nav-link.disabled {
   color: #6c757d;
   background-color: transparent;
@@ -8114,31 +8116,6 @@ body {
   cursor: pointer;
 }
 
-#mitoitaliano {
-	margin-bottom:6rem;
-}
-#mitogreco {
-	margin-bottom:6rem;
-}
-@media (max-width: 720px) {
- .youtube {
-	width:32.4rem;
-	height:20.16rem;
- }	
-}
-@media (max-width: 540px) {
- .youtube {
-	width:25.9rem;
-	height:16.12rem;
- }	
-}
-@media (max-width: 440px) {
- .youtube {
-	width:17.46rem;
-	height:10.88rem;
- }	
-}
-
 @media only screen and (max-width: 1000px){
 	.modal-content {
     width: 40%;
@@ -8273,6 +8250,10 @@ body {
   display: flex;
   flex-wrap:wrap;
   justify-content: center;
+}
+
+address > a:focus {
+  text-decoration-line: underline;
 }
 
 .scheda_contatti {
