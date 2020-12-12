@@ -8114,6 +8114,31 @@ body {
   cursor: pointer;
 }
 
+#mitoitaliano {
+	margin-bottom:6rem;
+}
+#mitogreco {
+	margin-bottom:6rem;
+}
+@media (max-width: 720px) {
+ .youtube {
+	width:32.4rem;
+	height:20.16rem;
+ }	
+}
+@media (max-width: 540px) {
+ .youtube {
+	width:25.9rem;
+	height:16.12rem;
+ }	
+}
+@media (max-width: 440px) {
+ .youtube {
+	width:17.46rem;
+	height:10.88rem;
+ }	
+}
+
 @media only screen and (max-width: 1000px){
 	.modal-content {
     width: 40%;
