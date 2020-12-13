@@ -108,6 +108,9 @@
                         $(this).attr('tabindex',"-1");
                     })
                 $(this).parent().css("display","none");
+                var immagine = $(this).siblings("img").attr('src');
+                $(this).siblings("img").attr('src', 'none');
+                $('[src="'+immagine+'"]').focus();
             }
         });
     });
@@ -146,9 +149,7 @@
     });
     $('[href="#mitoitaliano"]').keyup(function(event){
         if(event.which == "13") {
-            console.log("ok invio");
             if(!stato_italiano) {
-                console.log("ok falso");
                 stato_italiano = true;
                 stato_greco = false;
                 $("#mitoitaliano").find('img[tabindex="0"]').first().focus();
