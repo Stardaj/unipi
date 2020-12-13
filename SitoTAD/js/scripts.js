@@ -67,7 +67,7 @@
         });
         $(this).keyup(function(event){
             if(event.which == "13") {
-                $('a, button, img[tabindex="0"]').not('[tabindex="-1"]').each(function() {
+                $('a, button, iframe, img[tabindex="0"]').not('[tabindex="-1"]').each(function() {
                         $(this).attr('tabindex',"-2");
                 })
                 if($(this).parent().parent().attr('id') == "mitoitaliano") {
