@@ -2466,12 +2466,6 @@ input[type=button].btn-block {
   border-radius: 0.25rem;
 }
 
-.card-group {
-	/*margin-top:-5rem; 
-  eliminato perchÃ© collassava con il paragrafo sopra, a meno che 
-  non dessi a quest'ultimo un margine di 8 (il che ovviamente non aveva senso) */
-	
-}
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -7998,10 +7992,28 @@ body {
 
 
 #mitoitaliano{
-	padding:auto;
+	margin-bottom:6rem;
 }
 #mitogreco{
-	padding:auto;
+	margin-bottom:6rem;
+}
+@media (max-width: 720px) {
+ .youtube {
+	width:32.4rem;
+	height:20.16rem;
+ }	
+}
+@media (max-width: 540px) {
+ .youtube {
+	width:25.9rem;
+	height:16.12rem;
+ }	
+}
+@media (max-width: 440px) {
+ .youtube {
+	width:17.46rem;
+	height:10.88rem;
+ }	
 }
 .sym-card {
 	max-height:18rem;
@@ -8049,8 +8061,6 @@ body {
   transition: 0.3s;
 }
 
-/* ho provato a cambiare lo hover così mi sembra più chiaro e 
-non compromette la visibilità delle immagini */
 .sym-img:hover, .sym-img:focus { 
   outline-style: solid;
   outline-width: thick;
